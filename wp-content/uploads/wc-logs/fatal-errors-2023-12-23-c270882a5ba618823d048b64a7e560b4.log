@@ -1,0 +1,57 @@
+2023-12-23T00:33:22+00:00 CRITICAL Uncaught Error: Call to a member function set_post_data() on bool in C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce\includes\class-wc-ajax.php:3392
+Stack trace:
+#0 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-includes\class-wp-hook.php(324): WC_AJAX::shipping_zone_methods_save_settings('')
+#1 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-admin\admin-ajax.php(188): do_action('wp_ajax_woocomm...')
+#4 {main}
+  thrown in C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce\includes\class-wc-ajax.php on line 3392
+
+2023-12-23T05:15:10+00:00 CRITICAL Uncaught Exception: Invalid data store. in C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce\includes\data-stores\class-wc-shipping-zone-data-store.php:101
+Stack trace:
+#0 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(159): WC_Shipping_Zone_Data_Store->read(Object(WC_Shipping_Zone))
+#1 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce\includes\class-wc-shipping-zone.php(62): WC_Data_Store->read(Object(WC_Shipping_Zone))
+#2 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(3159): WC_Shipping_Zone->__construct('3')
+#3 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-includes\class-wp-hook.php(324): WC_AJAX::shipping_zone_remove_method('')
+#4 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-admin\admin-ajax.php(188): do_action('wp_ajax_woocomm...')
+#7 {main}
+  thrown in C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce\includes\data-stores\class-wc-shipping-zone-data-store.php on line 101
+
+2023-12-23T05:39:30+00:00 CRITICAL Uncaught WCPay\Exceptions\API_Exception: Your site host "localhost" is on a private network. Jetpack can only connect to public sites. in C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce-payments\includes\wc-payment-api\class-wc-payments-http.php:194
+Stack trace:
+#0 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce-payments\includes\wc-payment-api\class-wc-payments-api-client.php(221): WC_Payments_Http->start_connection('http://localhos...')
+#1 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce-payments\includes\class-wc-payments-account.php(1928): WC_Payments_API_Client->start_server_connection('http://localhos...')
+#2 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce-payments\includes\class-wc-payments-account.php(1029): WC_Payments_Account->redirect_to_onboarding_flow_page()
+#3 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-includes\class-wp-hook.php(324): WC_Payments_Account->maybe_handle_onboarding('')
+#4 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-admin\admin.php(175): do_action('admin_init')
+#7 {main}
+  thrown in C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce-payments\includes\wc-payment-api\class-wc-payments-http.php on line 194
+
+2023-12-23T05:39:59+00:00 CRITICAL Uncaught WCPay\Exceptions\API_Exception: Your site host "localhost" is on a private network. Jetpack can only connect to public sites. in C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce-payments\includes\wc-payment-api\class-wc-payments-http.php:194
+Stack trace:
+#0 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce-payments\includes\wc-payment-api\class-wc-payments-api-client.php(221): WC_Payments_Http->start_connection('http://localhos...')
+#1 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce-payments\includes\class-wc-payments-account.php(1928): WC_Payments_API_Client->start_server_connection('http://localhos...')
+#2 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce-payments\includes\class-wc-payments-account.php(1029): WC_Payments_Account->redirect_to_onboarding_flow_page()
+#3 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-includes\class-wp-hook.php(324): WC_Payments_Account->maybe_handle_onboarding('')
+#4 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-admin\admin.php(175): do_action('admin_init')
+#7 {main}
+  thrown in C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce-payments\includes\wc-payment-api\class-wc-payments-http.php on line 194
+
+2023-12-23T05:41:15+00:00 CRITICAL Uncaught WCPay\Exceptions\API_Exception: Your site host "localhost" is on a private network. Jetpack can only connect to public sites. in C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce-payments\includes\wc-payment-api\class-wc-payments-http.php:194
+Stack trace:
+#0 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce-payments\includes\wc-payment-api\class-wc-payments-api-client.php(221): WC_Payments_Http->start_connection('http://localhos...')
+#1 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce-payments\includes\class-wc-payments-account.php(1928): WC_Payments_API_Client->start_server_connection('http://localhos...')
+#2 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce-payments\includes\class-wc-payments-account.php(1029): WC_Payments_Account->redirect_to_onboarding_flow_page()
+#3 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-includes\class-wp-hook.php(324): WC_Payments_Account->maybe_handle_onboarding('')
+#4 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-admin\admin.php(175): do_action('admin_init')
+#7 {main}
+  thrown in C:\xampp\htdocs\class11\finalAssignment\clothingStore\wp-content\plugins\woocommerce-payments\includes\wc-payment-api\class-wc-payments-http.php on line 194
+
